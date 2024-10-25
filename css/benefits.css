@@ -1,0 +1,105 @@
+.text-1-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.text-2-container {
+  display: flex;
+  justify-content: center;
+}
+
+.text-1 {
+  font-size: 12px;
+
+  padding: 10px 20px;
+
+  display: inline-block;
+  background-color: #f2f3f8;
+  border-radius: 20px; /* Slightly rounded corners */
+}
+
+.text-2 {
+  font-size: 38px;
+  color: #121826;
+  font-weight: 500;
+  margin-top: 90px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.benefits-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+/* Adjust the grid layout */
+.inner-benefit-section {
+  display: grid;
+  grid-template-columns: 2fr 2fr; /* Two equal columns */
+  gap: 40px; /* Space between items */
+  margin-bottom: 30px;
+  /* Align items to start horizontally */
+}
+
+.benefit-content {
+  display: flex;
+  align-items: flex-start; /* Align the image and text at the top */
+  gap: 20px; /* Space between image and text */
+}
+
+.benefit-content img {
+  width: 45px; /* Fixed size for the image */
+  height: auto;
+}
+
+.inner-benefit-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.benefit-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px; /* Space between title and description */
+}
+
+.benefit-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Center everything horizontally on the page */
+.benefits-section {
+  max-width: 1200px; /* Limit the section width for better control */
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .text-2 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  .inner-benefit-section {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 20px; /* Adjust gap for mobile */
+  }
+
+  .benefit-content {
+    gap: 15px; /* Reduce gap between image and text for smaller screens */
+  }
+
+  .benefit-title {
+    font-size: 16px; /* Slightly reduce the title size for mobile */
+  }
+
+  .benefit-description {
+    font-size: 13px; /* Slightly reduce the description size for mobile */
+  }
+}

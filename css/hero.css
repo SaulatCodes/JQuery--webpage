@@ -1,0 +1,323 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* header styles start */
+
+.site-header {
+  background-color: #060311; /* Background color for the header */
+  color: white;
+  padding: 1rem 2rem;
+}
+.lock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #c7d1e4;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #8e1dff; /* Hover color change */
+}
+
+.login-btn .btn {
+  padding: 0.5rem 1.5rem;
+  background-color: #0047ff; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.login-btn .btn:hover {
+  background-color: #0029b5; /* Darker blue on hover */
+}
+
+.login-btn {
+  text-decoration: none;
+  color: white;
+}
+
+.start-btn {
+  padding: 0.6rem 0.4rem;
+  background: linear-gradient(180deg, #6279f9, #1e43ff); /* Linear gradient */
+  color: white;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex; /* Align text and image inline */
+  align-items: center; /* Vertically center the text and icon */
+  transition: background-color 0.3s;
+}
+
+.start-btn img.arrow-icon {
+  height: auto;
+  margin-left: 8px; /* Space between text and icon */
+}
+
+.start-btn:hover {
+  background: linear-gradient(
+    90deg,
+    #4157c7,
+    #1a38d9
+  ); /* Slightly darker gradient on hover */
+}
+
+/* hero section styles */
+.hero-section {
+  position: relative;
+  height: 768px; /* Set the fixed height for background */
+  background: url("/img/header bg.png") no-repeat center center,
+    url("/img/Bg lines.png") no-repeat right top;
+  background-size: cover, contain;
+  background-color: #060311; /* Ensure the background images scale properly */
+}
+
+/* Gradient for the word "Essay" */
+.text-gradient {
+  background: linear-gradient(90deg, #ff00ff, #7b00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gradient for the word "Writing" */
+.text-gradient2 {
+  background: linear-gradient(90deg, #7b00ff, #00d8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Content inside the background section */
+.hero-content {
+  position: absolute; /* Overlay this content on top of background */
+  top: 35%; /* Vertically center */
+  left: 50%; /* Horizontally center */
+  transform: translate(-50%, -50%); /* Center the content perfectly */
+  color: white; /* Example text color */
+  text-align: center; /* Center the text */
+}
+.text-h1 {
+  font-size: 58px;
+  white-space: nowrap;
+}
+
+p {
+  font-size: 20px;
+}
+
+.start-round-btn {
+  padding: 1rem 1.8rem;
+  background-color: white; /* Solid background for the button */
+  color: #060311;
+  border: 3px solid transparent; /* Border setup with transparent */
+  border-radius: 35px; /* Rounded corners */
+  font-size: 18px;
+  text-decoration: none;
+  gap: 12px;
+  font-weight: bold;
+  display: inline-flex; /* Align text and image inline */
+  align-items: center; /* Vertically center the text and icon */
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+
+  /* Gradient border effect */
+  background-image: linear-gradient(white, white),
+    linear-gradient(90deg, #4b00ff, #ff00ff); /* Dual background: white + gradient */
+  background-origin: border-box;
+  background-clip: padding-box, border-box; /* Clip the white background to padding-box */
+  box-shadow: 0px 0px 0px 2px transparent; /* Transparent initial shadow */
+}
+
+.start-round-btn img.arrow-icon {
+  height: auto;
+  margin-left: 8px; /* Space between text and icon */
+}
+
+.start-round-btn:hover {
+  background-image: linear-gradient(
+    90deg,
+    #4b00ff,
+    #ff00ff
+  ); /* Gradient fills the whole button */
+  color: white; /* Change text color to white for better contrast on gradient background */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* hero section styles end */
+
+/* New content below the hero section */
+.content-below {
+  padding: 50px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* the arrow color change */
+.start-round-btn svg path {
+  fill: #121826; /* Initial color for the SVG */
+}
+
+.start-round-btn:hover svg path {
+  fill: white; /* Change SVG color to white on hover */
+}
+
+/* Media queries for mobile responsiveness */
+
+/* Desktop Styles (Default) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger {
+  display: none; /* Burger icon hidden on desktop */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  /* Show the burger icon and hide the nav links on small screens */
+  .burger {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+
+  /* Hide the nav links initially */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .btn-hide {
+    display: none;
+  }
+
+  .btn-hide.active {
+    display: flex;
+  }
+
+  /* Display the nav links when the burger is clicked */
+  .nav-links.active {
+    display: flex;
+    padding: 20px;
+  }
+
+  .nav-links a {
+    display: block; /* Make each link a block element to fill the width */
+    padding: 12px 20px; /* Padding inside the link for a larger clickable area */
+    font-size: 16px; /* Increase font size for better readability */
+    color: white; /* Text color for contrast */
+    text-decoration: none; /* No underline */
+    margin-bottom: 10px; /* Space between each link */
+    width: 100%; /* Ensure full width for better touch response */
+    text-align: center; /* Center the text inside the link */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  /* Adjust button styles for small screens */
+  .login-btn,
+  .start-btn {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .start-btn img {
+    margin-left: 5px;
+  }
+}
+
+/* hero section responsive  */
+
+/* Responsive Styles for Mobile Screens (414px) */
+@media (max-width: 440px) {
+  /* Adjust hero section height */
+  .hero-section {
+    height: auto; /* Let the height adjust automatically */
+    padding: 20px; /* Add some padding */
+    height: 617px;
+  }
+
+  /* Adjust hero content positioning for mobile */
+  .hero-content {
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+    text-align: center; /* Keep text centered */
+    width: 100%; /* Ensure full width on mobile */
+  }
+  /* Reduce font size for the heading */
+  .text-h1 {
+    font-size: 33px; /* Smaller heading for mobile */
+    white-space: normal; /* Allow wrapping */
+  }
+
+  /* Reduce paragraph text size */
+  .text-p {
+    font-size: 16px; /* Smaller paragraph text */
+    padding: 10px;
+  }
+
+  /* Adjust button size and padding */
+  .start-round-btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 16px; /* Smaller font for button */
+  }
+
+  /* Adjust the arrow icon size */
+  .start-round-btn img.arrow-icon {
+    width: 16px; /* Reduce the arrow size */
+    margin-left: 5px;
+  }
+}

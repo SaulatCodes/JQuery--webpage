@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Your Project</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- External CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/sliderlogos.css" />
+    <link rel="stylesheet" href="css/benefits.css" />
+
     <!-- Include jQuery CDN -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
@@ -18,18 +26,44 @@
     <!-- Header Section -->
     <header class="site-header">
       <nav class="navbar">
-        <div class="logo">
-          <a href="#">Logo</a>
+        <div class="lock">
+          <div class="burger">
+            <div class="burger-icon">
+              <img src="/img/icons/burger.png" alt="" />
+            </div>
+          </div>
+          <div class="logo-content">
+            <img src="/img/icons/logo.png" class="arrow-icon" />
+            <div class="logo">
+              <a href="#">PerfectEssayWriter</a>
+            </div>
+          </div>
+
+          <!-- Burger Icon -->
         </div>
+
         <ul class="nav-links">
           <li><a href="#use-cases">Use Cases</a></li>
           <li><a href="#reviews">Reviews</a></li>
           <li><a href="#faqs">FAQs</a></li>
           <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#pricing">Knowledge Base</a></li>
+
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="login-btn">
-          <a href="#login" class="btn">Login</a>
+
+        <div class="">
+          <div class="btn-hide">
+            <a href="#login" class="login-btn">Login</a>
+            <a href="#start" class="start-btn">
+              Start now
+              <img
+                src="/img/icons/next.png"
+                alt="Right arrow"
+                class="arrow-icon"
+              />
+            </a>
+          </div>
         </div>
       </nav>
     </header>
@@ -37,16 +71,261 @@
     <!-- hero section -->
     <section class="hero-section">
       <div class="hero-content">
-        <h1 class="text-h1">AI Powered Essay Writing Tools</h1>
-        <p class="text-h1">No need to struggle with essay writing anymore!</p>
-        <button>Start Now</button>
+        <h1 class="text-h1">
+          AI Powered <span class="text-gradient">Essay</span>
+          <span class="text-gradient2">Writing</span>
+          <span class="text-gradient3">Tools</span>
+        </h1>
+        <p class="text-p">No need to struggle with essay writing anymore!</p>
+        <button class="start-round-btn">
+          Start Now
+          <svg
+            width="17"
+            height="13"
+            viewBox="0 0 17 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.0848 5.99897L11.1264 1.04063C10.9929 0.911606 10.8139 0.84021 10.6282 0.841824C10.4425 0.843438 10.2648 0.917932 10.1335 1.04926C10.0022 1.18059 9.92766 1.35825 9.92605 1.54398C9.92444 1.7297 9.99583 1.90862 10.1249 2.04222L13.8741 5.79143H1.41732C1.22946 5.79143 1.04929 5.86605 0.91645 5.99889C0.783612 6.13173 0.708984 6.3119 0.708984 6.49976C0.708984 6.68762 0.783612 6.86779 0.91645 7.00063C1.04929 7.13347 1.22946 7.20809 1.41732 7.20809H13.8741L10.1249 10.9573C10.0572 11.0226 10.0032 11.1008 9.96612 11.1872C9.929 11.2736 9.90946 11.3666 9.90864 11.4606C9.90782 11.5547 9.92575 11.648 9.96136 11.735C9.99698 11.8221 10.0496 11.9012 10.1161 11.9677C10.1826 12.0342 10.2617 12.0868 10.3487 12.1224C10.4358 12.158 10.529 12.1759 10.6231 12.1751C10.7172 12.1743 10.8101 12.1547 10.8965 12.1176C10.9829 12.0805 11.0611 12.0265 11.1264 11.9589L16.0848 7.00055C16.2176 6.86772 16.2922 6.68758 16.2922 6.49976C16.2922 6.31194 16.2176 6.1318 16.0848 5.99897Z"
+              fill="#121826"
+            />
+          </svg>
+        </button>
       </div>
     </section>
 
     <!-- section below -->
     <section class="content-below">
-      <h2>About Our Tool</h2>
-      <p>This is the content that will appear below the background image.</p>
+      <h2 class="text-h2">
+        TRUSTED BY 100,000+ STUDENTS & PROFESSIONAL GLOBALLY AT TOP INSTITUTES
+        INCLUDING...
+      </h2>
+      <div class="logos">
+        <div class="logos-slide">
+          <img
+            src="/img/logos/columbia-university-in-the-city-of-new-york-vector-logo 1.png"
+            alt=""
+          />
+          <img src="/img/logos/Group (1).png" alt="" />
+          <img src="/img/logos/Group (2).png" alt="" />
+          <img src="/img/logos/Group 107734.png" alt="" />
+          <img src="/img/logos/Group 107735.png" alt="" />
+          <img src="/img/logos/Group 107736.png" alt="" />
+        </div>
+
+        <div class="logos-slide">
+          <img
+            src="/img/logos/columbia-university-in-the-city-of-new-york-vector-logo 1.png"
+            alt=""
+          />
+          <img src="/img/logos/Group (1).png" alt="" />
+          <img src="/img/logos/Group (2).png" alt="" />
+          <img src="/img/logos/Group 107734.png" alt="" />
+          <img src="/img/logos/Group 107735.png" alt="" />
+          <img src="/img/logos/Group 107736.png" alt="" />
+        </div>
+      </div>
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="/img/logos/Group 107749.png" alt="" />
+          <img src="/img/logos/Group 107738.png" alt="" />
+          <img src="/img/logos/Group 107740.png" alt="" />
+          <img src="/img/logos/Group 107746.png" alt="" />
+          <img src="/img/logos/Group 107747.png" alt="" />
+          <img src="/img/logos/Group 107748.png" alt="" />
+        </div>
+
+        <div class="logos-slide">
+          <img src="/img/logos/Group 107749.png" alt="" />
+          <img src="/img/logos/Group 107738.png" alt="" />
+          <img src="/img/logos/Group 107740.png" alt="" />
+          <img src="/img/logos/Group 107746.png" alt="" />
+          <img src="/img/logos/Group 107747.png" alt="" />
+          <img src="/img/logos/Group 107748.png" alt="" />
+        </div>
+      </div>
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="/img/logos/Vector (2).png" alt="" />
+          <img src="/img/logos/Group 107750.png" alt="" />
+          <img src="/img/logos/Group.png" alt="" />
+          <img src="/img/logos/Stanford-University-logo.png" alt="" />
+          <img src="/img/logos/University Of Virginia 1.png" alt="" />
+          <img
+            src="/img/logos/university-of-pennsylvania-penn-vector-logo 1.png"
+            alt=""
+          />
+        </div>
+
+        <div class="logos-slide">
+          <img src="/img/logos/Vector (2).png" alt="" />
+          <img src="/img/logos/Group 107750.png" alt="" />
+          <img src="/img/logos/Group.png" alt="" />
+          <img src="/img/logos/Stanford-University-logo.png" alt="" />
+          <img src="/img/logos/University Of Virginia 1.png" alt="" />
+          <img
+            src="/img/logos/university-of-pennsylvania-penn-vector-logo 1.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits-section">
+      <div class="text-1-container">
+        <div class="text-1">BENEFITS OF PERFECTESSAYWRITER.AI</div>
+      </div>
+      <div class="text-2-container">
+        <div class="text-2">
+          How will PerfectEssayWriter.ai empower your <br />
+          academic success?
+        </div>
+      </div>
+      <div class="clip-img">
+        <img src="/img/Clip path group.png" alt="" />
+      </div>
+
+      <div class="inner-benefit-section">
+        <div class="benefit-content">
+          <div>
+            <img src="/img/clipboard-list 1.png" alt="Clipboard Icon" />
+          </div>
+          <div class="inner-benefit-content">
+            <div class="benefit-title">
+              Write high-quality essays in seconds
+            </div>
+            <div class="benefit-description">
+              Your AI companion is trained to produce top-quality academic
+              essays!
+            </div>
+          </div>
+        </div>
+        <div class="benefit-content">
+          <div>
+            <img src="/img/education (3) 1.png" alt="Clipboard Icon" />
+          </div>
+          <div class="inner-benefit-content">
+            <div class="benefit-title">Build an AI-driven academic journey</div>
+            <div class="benefit-description">
+              Enhance your studies and performance with an AI essay- writing
+              partner, transforming your educational experience! essays!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-benefit-section">
+        <div class="benefit-content">
+          <div>
+            <img src="/img/file (4) 1.png" alt="Clipboard Icon" />
+          </div>
+          <div class="inner-benefit-content">
+            <div class="benefit-title">Generate innovative ideas</div>
+            <div class="benefit-description">
+              Overcome writer's block with PerfectEssayWriter.ai, sparking fresh
+              insights and perspectives!
+            </div>
+          </div>
+        </div>
+        <div class="benefit-content">
+          <div>
+            <img src="/img/solution 1.png" />
+          </div>
+          <div class="inner-benefit-content">
+            <div class="benefit-title">Master the art of essay writing</div>
+            <div class="benefit-description">
+              With tools like Essay Writer, Essay Outliner, and Thesis Statement
+              Generator, we are your all-in-one solution
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-benefit-section">
+        <div class="benefit-content">
+          <div>
+            <img src="/img/chart 1.png" alt="Clipboard Icon" />
+          </div>
+          <div class="inner-benefit-content">
+            <div class="benefit-title">Accelerate your essay output</div>
+            <div class="benefit-description">
+              Whether you're a student or an educator, PerfectEssayWriter.ai
+              helps you ramp up your productivity!
+            </div>
+          </div>
+        </div>
+        <div class="benefit-content">
+          <div>
+            <img src="/img/text 1.png" alt="Clipboard Icon" />
+          </div>
+          <div class="inner-benefit-content">
+            <div class="benefit-title">Fine-tune your writing style</div>
+            <div class="benefit-description">
+              Grammar & Spell check, Style, and Tone suggestions and Readability
+              analysis help you polish your work to perfection!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-benefit-section">
+        <div class="benefit-content">
+          <div>
+            <img src="/img/edit (2) 1.png" alt="Clipboard Icon" />
+          </div>
+          <div class="inner-benefit-content">
+            <div class="benefit-title">Excel in all your writing tasks</div>
+            <div class="benefit-description">
+              From research papers to personal statements, it generates the
+              ideal text for any purpose!
+            </div>
+          </div>
+        </div>
+        <div class="benefit-content">
+          <div>
+            <img src="/img/solutions 1.png" alt="Clipboard Icon" />
+          </div>
+          <div class="inner-benefit-content">
+            <div class="benefit-title">
+              Boost your creativity and vocabulary
+            </div>
+            <div class="benefit-description">
+              Content Summarizer, Paragraph Generator, and Vocabulary
+              Enhancement tools unlock your full writing potential! essays!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-benefit-section">
+        <div class="benefit-content">
+          <div>
+            <img src="/img/Frame 107763.png" alt="Clipboard Icon" />
+          </div>
+          <div class="inner-benefit-content">
+            <div class="benefit-title">
+              Write high-quality essays in seconds
+            </div>
+            <div class="benefit-description">
+              Your AI companion is trained to produce top-quality academic
+              essays!
+            </div>
+          </div>
+        </div>
+        <div class="benefit-content">
+          <div>
+            <img src="/img/happy 1.png" alt="Clipboard Icon" />
+          </div>
+          <div class="inner-benefit-content">
+            <div class="benefit-title">Create content in 26 languages</div>
+            <div class="benefit-description">
+              It can read and write content in 25 languages, including English,
+              Spanish, Japanese, and Portuguese!
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- External JS -->
