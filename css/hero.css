@@ -105,8 +105,8 @@ body {
 .hero-section {
   position: relative;
   height: 768px; /* Set the fixed height for background */
-  background: url("../img/bg.png") no-repeat center center,
-    url("../img/Bg lines.png") no-repeat right top;
+  background: url("/JQuery--webpage/img/bg.png") no-repeat center center,
+    url("/JQuery--webpage/img/Bg lines.png") no-repeat right top;
   background-size: cover, contain;
   background-color: #060311; /* Ensure the background images scale properly */
 }
