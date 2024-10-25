@@ -18,3 +18,6 @@ To run the project locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
+
+2. you can run it using live server extention in vs code 
+3. or you can simple open the html file
