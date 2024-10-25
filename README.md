@@ -19,5 +19,5 @@ To run the project locally:
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
 2. open code in vs code
-3. you need to thenrun it using live server extention in vs code 
+3. you need to then run it using live server extention in vs code.
 
